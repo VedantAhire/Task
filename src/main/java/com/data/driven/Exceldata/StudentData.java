@@ -13,20 +13,20 @@ public class StudentData {
 	
 	static FileInputStream fis;
 
-	static XSSFWorkbook wb;
+	static XSSFWorkbook wb; //class implements Workbook interface
 
-	static XSSFSheet sheet;
+	static XSSFSheet sheet;//class implements Sheet interface
 	
-	String sheetName;
+
 	
-	static Properties pro;
 
 	
 	public Object[][] getStudData() {
-		File f = new File(".//ExcelData//Data.xlsx");
+		
+		File f = new File(".//ExcelData//Data.xlsx");// load path
 		try {
-			fis = new FileInputStream(f);
-			wb = new XSSFWorkbook(fis);
+			fis = new FileInputStream(f);// load file
+			wb = new XSSFWorkbook(fis);// read the excel file 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -34,14 +34,16 @@ public class StudentData {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		sheet = wb.getSheet("StData");
+		sheet = wb.getSheet("StData");// get sheetname 
 
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 
-		for (int i = 0; i < sheet.getLastRowNum(); i++) {
-			for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
-				data[i][j] = sheet.getRow(i + 1).getCell(j).toString();
-			}
+		for (int i = 0; i < sheet.getLastRowNum(); i++) // for Excel sheet row
+			{
+			for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++)// for excel sheet column
+			{
+				data[i][j] = sheet.getRow(i + 1).getCell(j).toString();// fetching all data (i+1) is for the fetching from second row because first row contains title
+			}// toString() is used for alphanumeric i.e. your email id ex. ab123@gmail.com
 		}
 		return data;
 	}
