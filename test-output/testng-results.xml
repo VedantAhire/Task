@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1317" started-at="2020-10-10T16:11:23 IST" finished-at="2020-10-10T16:11:25 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1317" started-at="2020-10-10T16:11:23 IST" finished-at="2020-10-10T16:11:25 IST">
+      <class name="com.data.driven.test.StudentDataTest">
+        <test-method status="PASS" signature="sendEmailTest(java.lang.String, java.lang.String)[pri:0, instance:com.data.driven.test.StudentDataTest@71bbf57e]" name="sendEmailTest" duration-ms="20" started-at="2020-10-10T16:11:25 IST" data-provider="getStudentData" finished-at="2020-10-10T16:11:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhishek]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ab12@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmailTest -->
+        <test-method status="PASS" signature="sendEmailTest(java.lang.String, java.lang.String)[pri:0, instance:com.data.driven.test.StudentDataTest@71bbf57e]" name="sendEmailTest" duration-ms="2" started-at="2020-10-10T16:11:25 IST" data-provider="getStudentData" finished-at="2020-10-10T16:11:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chetan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ct23@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmailTest -->
+        <test-method status="PASS" signature="sendEmailTest(java.lang.String, java.lang.String)[pri:0, instance:com.data.driven.test.StudentDataTest@71bbf57e]" name="sendEmailTest" duration-ms="3" started-at="2020-10-10T16:11:25 IST" data-provider="getStudentData" finished-at="2020-10-10T16:11:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ganesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gn23@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmailTest -->
+        <test-method status="PASS" signature="sendEmailTest(java.lang.String, java.lang.String)[pri:0, instance:com.data.driven.test.StudentDataTest@71bbf57e]" name="sendEmailTest" duration-ms="2" started-at="2020-10-10T16:11:25 IST" data-provider="getStudentData" finished-at="2020-10-10T16:11:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Faruk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fk23@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmailTest -->
+      </class> <!-- com.data.driven.test.StudentDataTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
